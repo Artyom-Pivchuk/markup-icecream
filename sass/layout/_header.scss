@@ -1,0 +1,106 @@
+.page-header {
+    position: absolute;
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 74px;
+}
+
+.page-header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-wrapper {
+    z-index: 100;
+}
+
+.page-header__button {
+    width: 160px;
+    height: 44px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    @include font (16px, 700, 1.31);
+    color: var(--accent-color);   
+    border: none;
+    border-radius: 22px;
+    // display: flex;
+    // fill: var(--accent-color);
+    // justify-content: center;
+    // align-items: center;
+    // gap: 10px;
+    transition: background-color 250ms cubic-bezier(.4, 0, .2, 1), box-shadow 250ms cubic-bezier(.4, 0, .2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #ECEBEB;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.menu {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .navigation {
+        display: flex;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu__item:not(:last-child) {
+        margin-right: 35px;
+    }
+
+    .menu__link:focus,
+    .menu__link:hover {
+        color: var(--accent-color);
+    }
+
+    .logo {
+        margin-right: 128px;
+    }
+
+    .menu__link {
+        @include font (16px, 700, 1.31);
+        color: #FFFFFF;
+    }
+
+    .mobile-menu-open-btn {
+        display: none;
+    }   
+}
+
+@media screen and (max-width: 767.98px) {
+    .page-header__button {
+        display: none;        
+    }
+
+    .page-header__container {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    .btn-wrapper {
+        display: flex;        
+        align-items: center;
+    }
+    
+    .mobile-menu-open-btn {
+        margin-right: 32px;
+    }    
+}
+
+@media screen and (max-width: 1199.98px) {
+    .mobile-menu-open-btn {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 0;
+    }
+}
