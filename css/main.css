@@ -280,13 +280,13 @@ body {
     background-position: left 200px top 92px, left 120px top 83px;
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 465px) {
   .hero__container {
     background-image: url(../images/hero/icecream-mobile.png), url(../images/hero/ellipse-bg-tablet.png);
     background-position: left 200px top 92px, left 120px top 83px;
   }
 }
-@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 465px) and (min-device-pixel-ratio: 2), screen and (min-width: 465px) and (min-resolution: 192dpi), screen and (min-width: 465px) and (min-resolution: 2dppx) {
   .hero__container {
     background-image: url(../images/hero/icecream-mobile@2x.png), url(../images/hero/ellipse-bg-tablet@2x.png);
   }
