@@ -1,3 +1,8 @@
+.products__section {
+    min-width: 320px;
+    background-image: linear-gradient(#FFFFFF, #FFF5F6);
+}
+
 .products__label {
     font-family: var(--secondary-font-family);
     @include font (18px, 400, 1.17);
@@ -146,9 +151,15 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .products__list {
+        margin-top: -32px;
+        margin-left: -32px;
+    }
+    
     .products__list-item {
         width: 368px;
-    }
+        margin-top: 32px;
+        margin-left: 32px;    }
 
     .products__label {
         font-size: 30px;

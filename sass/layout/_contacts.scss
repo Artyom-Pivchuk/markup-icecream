@@ -1,0 +1,130 @@
+.contacts__section {
+    margin-top: 0;
+    background-color: #FFF5F6;
+    min-width: 320px;
+}
+
+.contacts__description {
+    font-family: var(--secondary-font-family);
+    text-transform: uppercase;
+    color: #FFA5BA;
+}
+
+.contacts--accent {
+    display: inline-block;
+    font-family: var(--secondary-font-family);
+    text-transform: uppercase;
+    color: #D41443;
+    margin-top: 16px;
+}
+
+.contacts__phone-number {
+    color: #d41443;
+}
+
+.contacts__socials {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: flex-end;
+}
+
+.contacts__socials-item:not(:first-child) {
+    margin-left: 30px;
+}
+
+.contacts__phone-label {
+    @include font (12px, 700, 1.86);
+}
+
+.contacts__rights-description {
+    @include font (14px, 700, 1.52);
+    color: #907E82;
+    text-align: center;
+}
+
+@media screen and (max-width: 767.98px) {
+    .contacts-wrapper {
+        display: flex;
+        flex-direction: column;    
+    }
+
+    .contacts__description {
+        @include font (18px, 400, 1.15); 
+        width: 232px;     
+    }
+
+    .contacts--accent {
+        @include font (34px, 400, 1.15);
+        width: 200px;
+    }
+
+    .contacts__social-block {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        align-self: flex-end;
+    }
+
+    .socials__icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .contacts__rights-description {
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contacts__container {
+        padding-bottom: 60px;
+    }
+
+    .contacts-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .socials__icon {
+        width: 34px;
+        height: 34px;
+    }
+
+    .contacts__description {
+        font-size: 26px;
+        width: 340px;
+    }
+
+    .contacts--accent {
+        width: 340px;
+        font-size: 48px;        
+        margin-top: 12px;
+    }
+    
+    .contacts__social-block {
+        padding-top: 60px;        
+    }
+
+    .contacts__phone-label {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contacts__description {
+        width: 472px;
+    }
+
+    .contacts--accent {
+        width: 472px;
+        font-size: 58px;
+        margin-top: 16px;
+    }
+
+    .contacts__phone-label {
+        font-size: 14px;
+    }
+
+    .contacts__social-block {
+        padding-top: 0;
+    }
+}
