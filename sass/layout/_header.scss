@@ -24,11 +24,10 @@
     color: var(--accent-color);   
     border: none;
     border-radius: 22px;
-    // display: flex;
-    // fill: var(--accent-color);
-    // justify-content: center;
-    // align-items: center;
-    // gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     transition: background-color 250ms cubic-bezier(.4, 0, .2, 1), box-shadow 250ms cubic-bezier(.4, 0, .2, 1);
 
     &:hover,
@@ -95,6 +94,10 @@
     .mobile-menu-open-btn {
         margin-right: 32px;
     }    
+
+    .mobile-menu-open-btn__icon{
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width: 1199.98px) {
